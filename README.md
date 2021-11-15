@@ -1,7 +1,7 @@
 # Registraion Form
 Phone pattern - +77-333-444-666 | 77-(333)-444-666 | 77333444666
 
-## [Live demo](https://registraion-form-tz.surge.sh/)
+## [Live demo](https://registration-form-tz.surge.sh/)
 
 ## Running locally
 
