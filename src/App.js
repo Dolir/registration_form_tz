@@ -23,12 +23,12 @@ function App() {
       Object.values(formError).every((x) => !x)
     ) {
       setIsValid(true)
-    }else{
+    } else {
       setIsValid(false)
     }
   }, [formData])
   function handleChange(e) {
-    if(e.target.name === 'agreement'){
+    if (e.target.name === "agreement") {
       setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }))
     }
     if (!e.target.value) {
@@ -71,9 +71,10 @@ function App() {
           ...prev,
           [e.target.name]: ""
         }))
-        setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }))
+
         break
     }
+    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }))
   }
 
   const Languages = ["Английский", "Русский", "Китайский", "Испанский"]
