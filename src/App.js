@@ -26,7 +26,7 @@ function App() {
     } else {
       setIsValid(false)
     }
-  }, [formData])
+  }, [formData,formError])
   function handleChange(e) {
     if (e.target.name === "agreement") {
       setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }))
